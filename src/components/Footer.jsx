@@ -1,8 +1,13 @@
+import { FooterStyle } from '../css/FooterStyle'
+
 const Footer=()=>{
-    return (
-        <>
-        <h5>@2024 - Todos os direitos reservados</h5>
-        </>
+    return(
+        
+        <FooterStyle>
+        <section className="Footer">
+            <div className="background"></div>
+       </section>
+       </FooterStyle>
     )
 }
 export default Footer
