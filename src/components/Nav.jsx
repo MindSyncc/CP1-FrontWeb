@@ -1,20 +1,18 @@
-import { NavStyle } from '../css/NavStyle'
+import logo from '../assets/logo.jpg'
+import '../css/Nav.css'
+
 
 const Nav =() => {
     return(
-        
-        <NavStyle>
-        <header className='headerwrapper'>
-            <nav className='nav-list'>
+            <nav className='container'>
+                <img src={logo} alt="" className='logo'/>
                 <ul>
                     <li>Home</li>
-                    <li>Produtos</li>
                     <li>Sobre</li>
                     <li>Contato</li>
+                    <li><button className='btn'>Nossos Produtos</button></li>
                 </ul>
             </nav>
-        </header>
-       </NavStyle>
     )
 }
 export default Nav

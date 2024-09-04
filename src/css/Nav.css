@@ -1,0 +1,44 @@
+
+nav{
+    color: white;
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+}
+
+nav ul li:last-child{
+    margin-left: 50px;
+}
+
+.logo{
+    height: 100%;
+}
+
+.btn{
+    background-color: #FFF;
+    color: #212121;
+    padding: 14px 25px;
+    font-size: 14px;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+
