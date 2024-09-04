@@ -1,7 +1,7 @@
 import '../css/Home.css'
 import flecha from './../assets/flecha.svg'
 
-const Home=()=>{
+const Home = () => {
     return(
         <div className="hero container">
             <div className="hero-text">
