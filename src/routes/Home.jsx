@@ -39,7 +39,7 @@ const Home = () => {
                         Oferecemos uma experiência única e enriquecedora para todos os entusiastas do esporte. Explore nosso site e descubra por que somos a escolha preferida para todos os apaixonados por esportes. Junte-se à nossa comunidade e leve sua prática esportiva para o próximo nível!
                     </p>
                     <button className='botao'>
-                        Veja os produtos 
+                        Veja mais produtos 
                     </button>
                 </div>
             </div>
@@ -58,7 +58,7 @@ const Home = () => {
                                 className="produto-image"
                             />
                             <h2 className="produto-name">{produto.name}</h2>
-                            <p className="produto-price">${produto.price.toFixed(2)}</p>
+                            <p className="produto-price">R${produto.price.toFixed(2)}</p>
                             <Link to ="/produtodetails">
                                 <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
                             </Link>
@@ -79,7 +79,7 @@ const Home = () => {
                                 className="produto-image"
                             />
                             <h2 className="produto-name">{produto.name}</h2>
-                            <p className="produto-price">${produto.price.toFixed(2)}</p>
+                            <p className="produto-price">R${produto.price.toFixed(2)}</p>
                             <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
                         </div>
                     ))}
@@ -98,7 +98,7 @@ const Home = () => {
                                 className="produto-image"
                             />
                             <h2 className="produto-name">{produto.name}</h2>
-                            <p className="produto-price">${produto.price.toFixed(2)}</p>
+                            <p className="produto-price">R${produto.price.toFixed(2)}</p>
                             <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
                         </div>
                     ))}
@@ -117,7 +117,7 @@ const Home = () => {
                                 className="produto-image"
                             />
                             <h2 className="produto-name">{produto.name}</h2>
-                            <p className="produto-price">${produto.price.toFixed(2)}</p>
+                            <p className="produto-price">R${produto.price.toFixed(2)}</p>
                             <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
                         </div>
                     ))}

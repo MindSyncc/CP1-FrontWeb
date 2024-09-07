@@ -27,6 +27,7 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
+    
   }
   
   .product-description {
@@ -67,4 +68,6 @@
   .btn:hover {
     background-color: #0056b3;
   }
+
+
   
