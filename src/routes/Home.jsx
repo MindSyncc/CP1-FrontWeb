@@ -42,83 +42,63 @@ const Produtos = () => {
                 </div>
             </div>
             <div className="produtos-container">
-                <div className="produtos-col">
-                    {col1.map((produto) => (
-                        <div key={produto.id} className="produto-card">
-                            <img
-                                src={
-                                    produto.image ||
-                                    (produto.id === 1 ? tenis : 
-                                    (produto.id === 2 ? bola_pilates :
-                                    (produto.id === 3 ? shorts : 'default-image.jpg')))
-                                }
-                                alt={produto.name}
-                                className="produto-image"
-                            />
-                            <h2 className="produto-name">{produto.name}</h2>
-                            <p className="produto-price">${produto.price.toFixed(2)}</p>
-                            <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
-                        </div>
-                    ))}
-                </div>
-                <div className="produtos-col">
-                    {col2.map((produto) => (
-                        <div key={produto.id} className="produto-card">
-                            <img
-                                src={
-                                    produto.image ||
-                                    (produto.id === 4 ? camiseta : 
-                                    (produto.id === 5 ? cama_elastica :
-                                    (produto.id === 6 ? smart_watch : 'default-image.jpg')))
-                                }
-                                alt={produto.name}
-                                className="produto-image"
-                            />
-                            <h2 className="produto-name">{produto.name}</h2>
-                            <p className="produto-price">${produto.price.toFixed(2)}</p>
-                            <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
-                        </div>
-                    ))}
-                </div>
-                <div className="produtos-col">
-                    {col3.map((produto) => (
-                        <div key={produto.id} className="produto-card">
-                            <img
-                                src={
-                                    produto.image ||
-                                    (produto.id === 7 ? raquete : 
-                                    (produto.id === 8 ? luva_goleiro :
-                                    (produto.id === 9 ? kit_elastico : 'default-image.jpg')))
-                                }
-                                alt={produto.name}
-                                className="produto-image"
-                            />
-                            <h2 className="produto-name">{produto.name}</h2>
-                            <p className="produto-price">${produto.price.toFixed(2)}</p>
-                            <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
-                        </div>
-                    ))}
-                </div>
-                <div className="produtos-col">
-                    {col4.map((produto) => (
-                        <div key={produto.id} className="produto-card">
-                            <img
-                                src={
-                                    produto.image ||
-                                    (produto.id === 10 ? bicicleta : 
-                                    (produto.id === 11 ? bola_futebol :
-                                    (produto.id === 12 ? step : 'default-image.jpg')))
-                                }
-                                alt={produto.name}
-                                className="produto-image"
-                            />
-                            <h2 className="produto-name">{produto.name}</h2>
-                            <p className="produto-price">${produto.price.toFixed(2)}</p>
-                            <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
-                        </div>
-                    ))}
-                </div>
+            <div className="produtos-col">
+                {col1.map((produto, index) => (
+                    <div key={produto.id} className="produto-card">
+                        <img
+                            src={index === 0 ? tenis : (index === 1 ? bola_pilates : (index === 2 ? shorts : produto.image))}
+                            alt={produto.name}
+                            className="produto-image"
+                        />
+                        <h2 className="produto-name">{produto.name}</h2>
+                        <p className="produto-price">${produto.price.toFixed(2)}</p>
+                        <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
+                    </div>
+                ))}
             </div>
+            <div className="produtos-col">
+                {col2.map((produto, index) => (
+                    <div key={produto.id} className="produto-card">
+                        <img
+                            src={index === 0 ? camiseta : (index === 1 ? cama_elastica : (index === 2 ? smart_watch : produto.image))}
+                            alt={produto.name}
+                            className="produto-image"
+                        />
+                        <h2 className="produto-name">{produto.name}</h2>
+                        <p className="produto-price">${produto.price.toFixed(2)}</p>
+                        <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
+                    </div>
+                ))}
+            </div>
+            <div className="produtos-col">
+                {col3.map((produto, index) => (
+                    <div key={produto.id} className="produto-card">
+                        <img
+                            src={index === 0 ? raquete : (index === 1 ? luva_goleiro : (index === 2 ? kit_elastico : produto.image))}
+                            alt={produto.name}
+                            className="produto-image"
+                        />
+                        <h2 className="produto-name">{produto.name}</h2>
+                        <p className="produto-price">${produto.price.toFixed(2)}</p>
+                        <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
+                    </div>
+                ))}
+            </div>
+            <div className="produtos-col">
+                {col4.map((produto, index) => (
+                    <div key={produto.id} className="produto-card">
+                        <img
+                            src={index === 0 ? bicicleta : (index === 1 ? bola_futebol : (index === 2 ? step : produto.image))}
+                            alt={produto.name}
+                            className="produto-image"
+                        />
+                        <h2 className="produto-name">{produto.name}</h2>
+                        <p className="produto-price">${produto.price.toFixed(2)}</p>
+                        <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
+                    </div>
+                ))}
+            </div>
+        </div>
         </>
     );
 };

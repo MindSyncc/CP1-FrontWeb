@@ -1,5 +1,6 @@
 .sobre{
     margin-top: 90px;
+    background-color: #dcdcdc;
 }
 
 .sobre img{
@@ -12,7 +13,14 @@
 }
 .sobre-texto p{
     line-height: 2;
+
 }
+
+.sobre-texto h1{
+    font-size: 2rem;
+}
+
 .sobre-texto h2{
     margin: 20px 0;
+    font-size: 1.5rem;
 }

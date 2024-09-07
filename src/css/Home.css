@@ -1,3 +1,11 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+}
+
 .hero{
     width: 100%;
     min-height: 100vh;
@@ -5,10 +13,20 @@
      url('../assets/hero.jpg');
     background-size: cover; 
     color: #fff;
+    text-shadow: 2px 2px 7px #242424;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 90px;
+    padding-top: 50px;
+
+}
+.hero p{
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 1rem;
+  padding-bottom: 40px;
+  color: #ffffff;;
+  font-weight: 550;
 }
 
 .hero-text{
@@ -16,15 +34,19 @@
     max-width: 800px;
 }
 
+
 .hero-text h1{
-    font-size: 60px;
+    font-size: 3.2rem;
     font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: normal;
 }
 
 .hero-text {
     max-width: 700px;
     margin: 10px auto 20px;
     line-height: 1.4;
+    font-weight: 1000;
 }
 
 .hero-text img{
@@ -59,6 +81,7 @@
     flex-wrap: wrap; /* Permite que as colunas se ajustem em telas menores */
     max-width: 1200px; /* Largura máxima do contêiner */
     margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    background-color: #dcdcdc;
   }
   
   /* Cada coluna de produtos */
@@ -76,7 +99,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     width: 180px; /* Largura dos cards */
-    min-height: 300px; /* Altura mínima para os cards */
+    min-height: 320px; /* Altura mínima para os cards */
     margin: 5px 1px; /* Espaçamento reduzido entre os cards, horizontalmente e verticalmente */
     padding: 15px;
     text-align: center;
@@ -102,7 +125,7 @@
     background-color: #444444; /* Cor de fundo do botão */
     color: #fff; /* Cor do texto do botão */
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 10px;
     cursor: pointer;
     margin-top: 15px;

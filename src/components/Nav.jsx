@@ -1,5 +1,6 @@
 // src/components/Nav.jsx
 
+
 import { Link } from 'react-router-dom'; // Importe o Link do react-router-dom
 import logo from '../assets/logo.jpg';
 import '../css/Nav.css';

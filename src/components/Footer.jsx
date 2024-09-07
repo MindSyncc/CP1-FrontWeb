@@ -25,9 +25,12 @@ const Footer = () => {
                 <div className="footer-section">
                     <h2>Siga-nos</h2>
                     <div className="social-icons">
-                        <a href="#" className="social-icon">Facebook</a>
-                        <a href="#" className="social-icon">Bluesky</a>
-                        <a href="#" className="social-icon">Instagram</a>
+                        <ul>
+                            <li><a href="#" className="social-icon">Facebook</a></li>
+                            <li><a href="#" className="social-icon">Bluesky</a></li>
+                            <li><a href="#" className="social-icon">Instagram</a></li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
