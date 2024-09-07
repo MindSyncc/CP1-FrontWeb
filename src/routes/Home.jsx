@@ -15,6 +15,7 @@ import kit_elastico from './../assets/kit-elastico.webp';
 import step from './../assets/step.jpg';
 import produtos from '../data/Produtos';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const Home = () => {
@@ -59,7 +60,9 @@ const Home = () => {
                             />
                             <h2 className="produto-name">{produto.name}</h2>
                             <p className="produto-price">${produto.price.toFixed(2)}</p>
-                            <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
+                            <Link to ="/produtosdetails">
+                                <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
+                            </Link>
                         </div>
                     ))}
                 </div>
