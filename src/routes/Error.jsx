@@ -1,10 +1,12 @@
 import error from './../assets/error.jpg';
+import "../css/Error.css";
 
 const Error=()=>{
     return (
         <>
-        <h1>404 - Page Not Found!</h1>
-        <img src={error} alt="Erro" />
+        <div className="erro">
+            <img src={error} alt="Erro" />
+        </div>
         </>
     )
 }
