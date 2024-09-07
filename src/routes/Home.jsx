@@ -32,7 +32,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="hero container">
+            <div className="hero">
                 <div className="hero-text">
                     <h1>Encontre os melhores produtos esportivos aqui!</h1>
                     <p>
