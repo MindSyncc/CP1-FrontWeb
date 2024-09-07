@@ -1,6 +1,5 @@
 import React from 'react';
 import '../css/Home.css';
-import flecha from './../assets/flecha.svg';
 import tenis from './../assets/tenis-de-corrida.webp';
 import camiseta from './../assets/camiseta-corrida.jpg';
 import raquete from './../assets/raquete-de-mesa.webp';
@@ -39,8 +38,8 @@ const Home = () => {
                     <p>
                         Oferecemos uma experiência única e enriquecedora para todos os entusiastas do esporte. Explore nosso site e descubra por que somos a escolha preferida para todos os apaixonados por esportes. Junte-se à nossa comunidade e leve sua prática esportiva para o próximo nível!
                     </p>
-                    <button className='btn'>
-                        Veja os produtos <img src={flecha} alt="Seta para ver produtos" />
+                    <button className='botao'>
+                        Veja os produtos 
                     </button>
                 </div>
             </div>
