@@ -20,7 +20,7 @@ const Nav = () => {
                     <Link to="/contato">Contato</Link>
                 </li>
                 <li>
-                    <Link to="/produtos">
+                    <Link to="/produtosdetails">
                         <button className='btn'>Nossos Produtos</button>
                     </Link>
                 </li>

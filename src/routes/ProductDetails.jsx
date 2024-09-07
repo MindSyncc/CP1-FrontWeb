@@ -4,9 +4,6 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import produtos from '../data/Produtos'; // Ajuste o caminho conforme necessário
 import '../css/ProductDetails.css';
-import ProductDetails from './routes/ProductDetails';
-
-
 
 const ProductDetails = () => {
   const { id } = useParams(); // Obtém o ID do produto da URL
