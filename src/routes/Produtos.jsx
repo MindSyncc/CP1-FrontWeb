@@ -27,6 +27,7 @@ const Produtos = () => {
     };
 
     return (
+        
         <div className="produtos-container">
             <div className="produtos-col">
                 {col1.map((produto, index) => (

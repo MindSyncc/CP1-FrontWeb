@@ -1,0 +1,18 @@
+.sobre{
+    margin-top: 90px;
+}
+
+.sobre img{
+    width: 100%;
+}
+
+.sobre-texto{
+    padding: 15vh;
+    font: 1rem "Verdana", sans-serif;
+}
+.sobre-texto p{
+    line-height: 2;
+}
+.sobre-texto h2{
+    margin: 20px 0;
+}
