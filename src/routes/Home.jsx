@@ -60,7 +60,7 @@ const Home = () => {
                             />
                             <h2 className="produto-name">{produto.name}</h2>
                             <p className="produto-price">${produto.price.toFixed(2)}</p>
-                            <Link to ="/produtosdetails">
+                            <Link to ="/produtodetails">
                                 <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
                             </Link>
                         </div>

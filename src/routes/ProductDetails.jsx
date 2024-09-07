@@ -1,17 +1,23 @@
-
 // src/pages/ProductDetails.jsx
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import produtos from '../data/Produtos'; // Ajuste o caminho conforme necessário
 import '../css/ProductDetails.css';
 
+
 const ProductDetails = () => {
   const { id } = useParams(); // Obtém o ID do produto da URL
   const [produto, setProduto] = useState(null);
 
   useEffect(() => {
+    // Adicione console logs para depuração
+    console.log("ID do produto da URL:", id);
+    console.log("Lista de produtos:", produtos);
+
     // Encontre o produto pelo ID
-    const produtoEncontrado = produtos.find(p => p.id === parseInt(id));
+    const produtoEncontrado = produtos.find(p => p.id === parseInt(id, 10)); // Certifique-se de que ID é um número
+    console.log("Produto encontrado:", produtoEncontrado);
+
     setProduto(produtoEncontrado);
   }, [id]);
 

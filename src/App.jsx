@@ -15,6 +15,7 @@ function App() {
     <>
       <Nav/>
       {/*O componente Home já está sendo chamado pelo Outlet*/}
+      
       <Outlet/>
       <Footer/>
  

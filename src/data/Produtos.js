@@ -1,5 +1,5 @@
 const produtos = [
-    { id: 1, name: 'Tênis de Corrida', price: 120.00, image: 'https://via.placeholder.com/150?text=Tenis+de+Corrida' },
+    { id: 1, name: 'Tênis de Corrida', price: 120.00, image: '../assets/tenis-de-corrida.webp'},
     { id: 2, name: 'Bola de Pilates', price: 150.00, image: 'https://via.placeholder.com/150?text=Bola+de+Pilates' },
     { id: 3, name: 'Shorts Masculino', price: 50.00, image: 'https://via.placeholder.com/150?text=Shorts+Masculino' },
     { id: 4, name: 'Camiseta Esportiva', price: 30.00, image: 'https://via.placeholder.com/150?text=Camiseta+Esportiva' },

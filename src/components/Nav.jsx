@@ -1,9 +1,7 @@
-// src/components/Nav.jsx
-
-
 import { Link } from 'react-router-dom'; // Importe o Link do react-router-dom
-
 import '../css/Nav.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart, faSearch, faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 const Nav = () => {
     return (
@@ -19,11 +17,22 @@ const Nav = () => {
                 <li>
                     <Link to="/contato">Contato</Link>
                 </li>
-                <li>
-                    <Link to="/produtosdetails">
-                        <button className='btn'>Nossos Produtos</button>
-                    </Link>
-                </li>
+             
+        <li className="nav-item">
+          <a href="/busca" className="nav-link">
+            <FontAwesomeIcon icon={faSearch} className="nav-icon" />
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="/favoritos" className="nav-link">
+            <FontAwesomeIcon icon={faHeart} className="nav-icon" />
+          </a>
+        </li>
+        <li className="nav-item">
+          <a href="/carrinho" className="nav-link">
+            <FontAwesomeIcon icon={faShoppingCart} className="nav-icon" />
+          </a>
+        </li>
             </ul>
         </nav>
     );
