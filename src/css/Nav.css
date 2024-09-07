@@ -1,8 +1,8 @@
-
+/* Estilo base para o menu de navegação */
 nav {
     color: rgb(0, 0, 0);
     width: 100vw;
-    height: 12vh;
+    height: 15vh;
     position: fixed;
     top: 0;
     left: 0;
@@ -19,26 +19,38 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    
-
+    display: flex; /* Exibir os itens na horizontal */
+    align-items: center;
+    justify-content: center;
 }
 
 nav ul li {
     display: inline-block;
     list-style: none;
     margin: 0 10px;
-    font-size: 20px;
-    
 }
 
 nav ul li:last-child {
     margin-left: 30px;
 }
 
+.container a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none; /* Remover sublinhado dos links */
+}
+
+.container .link-home a:hover {
+    border-bottom: 1px solid #000000;
+}
+
 .logo {
-    font-weight: bold;
     margin-top: 20px;
-    color: #535252;
+    color: #500101;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2rem;
 }
 
 .btn {
@@ -46,7 +58,69 @@ nav ul li:last-child {
     color: #212121;
     padding: 14px 25px;
     font-size: 14px;
-    border-radius: 30px;
+    border-radius: 100px;
     cursor: pointer;
 }
+.menu-toggle{
+    display: none;
+}
 
+@media (max-width: 980px){
+    .logo{
+        font-size: 2rem;
+
+    }
+    .container a{
+        font-size: 1.1rem;
+    }
+    .botao{
+        font-size: 0.8rem;
+    }
+
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto; /* Ajustar altura para caber o conteúdo */
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Transformar a lista em coluna */
+        width: 100%; /* Largura total para itens de menu */
+        display: none; /* Ocultar o menu inicialmente */
+    }
+
+    nav ul.show {
+        display: flex; /* Exibir o menu quando ativado */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Espaçamento vertical entre itens */
+        text-align: center; /* Centralizar texto */
+    }
+
+    .logo {
+        margin: 10px 0; /* Ajustar margem da logo */
+    }
+
+    .botao {
+        margin-top: 10px; /* Ajustar margem do botão */
+        width: 100%; /* Largura total do botão */
+        text-align: center; /* Centralizar texto do botão */
+    }
+
+    #botao-home{
+        margin: 0;
+    }
+
+    .menu-toggle {
+        display: block; /* Mostrar o botão do menu hamburguer */
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
