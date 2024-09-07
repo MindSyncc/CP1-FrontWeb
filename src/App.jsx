@@ -5,6 +5,9 @@ import Nav from './components/Nav'
 import Produtos from './routes/Produtos'
 import '../src/index.css'
 
+
+
+
 function App() {
   return (
     <>

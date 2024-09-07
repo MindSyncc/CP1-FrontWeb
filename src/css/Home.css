@@ -31,3 +31,84 @@
     margin-left: 5px;
 }
 
+
+
+
+
+
+
+/*body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+  }*/
+
+
+
+/* Container para as colunas de produtos */
+.produtos-container {
+    display: flex;
+    justify-content: center; /* Centraliza as colunas no contêiner */
+    padding: 20px;
+    gap: 2px; /* Reduz o espaço entre as colunas para 2 pixels */
+    flex-wrap: wrap; /* Permite que as colunas se ajustem em telas menores */
+    max-width: 1200px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+  }
+  
+  /* Cada coluna de produtos */
+  .produtos-col {
+    flex: 1;
+    min-width: 200px; /* Largura mínima das colunas */
+    display: flex;
+    flex-direction: column; /* Empilha os cards verticalmente */
+    align-items: center; /* Centraliza os cards horizontalmente na coluna */
+  }
+  
+  /* Estilos para cada card de produto */
+  .produto-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 180px; /* Largura dos cards */
+    min-height: 300px; /* Altura mínima para os cards */
+    margin: 5px 1px; /* Espaçamento reduzido entre os cards, horizontalmente e verticalmente */
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .produto-image {
+    width: 100%;
+    height: 150px; /* Altura fixa para a imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
+  }
+  
+  .produto-name {
+    font-size: 1em; /* Tamanho da fonte dos nomes dos produtos */
+    margin: 10px 0;
+  }
+  
+  .produto-price {
+    color: #333;
+  }
+
+  .produto-button {
+    background-color: #444444; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.produto-button:hover {
+    background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+}
