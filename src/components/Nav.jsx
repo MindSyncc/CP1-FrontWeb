@@ -2,13 +2,13 @@
 
 
 import { Link } from 'react-router-dom'; // Importe o Link do react-router-dom
-import logo from '../assets/logo.jpg';
+
 import '../css/Nav.css';
 
 const Nav = () => {
     return (
         <nav className='container'>
-            <img src={logo} alt="Logo" className='logo'/>
+            <h1 className='logo'>Power Sports</h1>
             <ul>
                 <li>
                     <Link to="/">Home</Link>
