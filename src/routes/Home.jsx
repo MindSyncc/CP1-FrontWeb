@@ -21,7 +21,7 @@ const Home = () => {
     const navigate = useNavigate();
 
     const handleClick = (id) => {
-        navigate(`/produto/${id}`);
+        navigate(`/produtosdetails/${id}`);
     };
 
     // Dividindo os produtos em colunas. Ajuste conforme a sua lógica.
@@ -59,7 +59,7 @@ const Home = () => {
                             />
                             <h2 className="produto-name">{produto.name}</h2>
                             <p className="produto-price">R${produto.price.toFixed(2)}</p>
-                            <Link to ="/produtodetails">
+                            <Link to={`/produtosdetails/${produto.id}`}>
                                 <button className="produto-button" onClick={() => handleClick(produto.id)}>Comprar</button>
                             </Link>
                         </div>
@@ -127,5 +127,5 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default Home
 

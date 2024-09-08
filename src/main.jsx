@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       {path:'/', element:<Home/>},
       {path:'/contato', element:<Contato/>},
       {path:'/sobre',element:<Sobre/>},
-      {path:'/produtodetails',element:<ProductDetails/>},
+      {path:'/produtosdetails/:id',element:<ProductDetails/>},
     ]
   }
 ])

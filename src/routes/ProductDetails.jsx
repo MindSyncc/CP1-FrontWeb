@@ -2,8 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import produtos from '../data/Produtos'; // Ajuste o caminho conforme necessário
-import '../css/ProductDetails.css';
-
+import '../css/ProductDetails.css';import tenis from './../assets/tenis-de-corrida.webp';
 
 const ProductDetails = () => {
   const { id } = useParams(); // Obtém o ID do produto da URL
@@ -28,15 +27,17 @@ const ProductDetails = () => {
   return (
     <div className="product-details container">
       <h1>{produto.name}</h1>
-      <img src={produto.image} alt={produto.name} className="product-image" />
+      <img src={tenis} alt={produto.name} className="product-image" />
       <p className="product-description">{produto.description}</p>
       <p className="product-price">${produto.price.toFixed(2)}</p>
       <button className="btn">Adicionar ao Carrinho</button>
     </div>
+    
   );
 };
 
-export default ProductDetails;
+export default ProductDetails
+
 
 
 

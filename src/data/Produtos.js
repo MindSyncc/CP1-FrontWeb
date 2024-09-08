@@ -1,3 +1,4 @@
+
 const produtos = [
     { id: 1, name: 'Tênis de Corrida', price: 220.00, image: '../assets/tenis-de-corrida.webp'},
     { id: 2, name: 'Bola de Pilates', price: 70.00, image: 'https://via.placeholder.com/150?text=Bola+de+Pilates' },
